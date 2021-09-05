@@ -9,6 +9,11 @@ import SwiftUI
 
 struct Home: View {
 
+    
+    @EnvironmentObject var userData:UserData
+    
+    @State var showingProfile = false
+    
     var categories:[String:[Landmark]]{
         .init(grouping: landmarks, by: {$0.category})
     }
@@ -26,13 +31,25 @@ struct Home: View {
                     .listRowInsets(EdgeInsets())
                 
                 ForEach(categories.keys.sorted(), id: \.self){ categoryName in
-                    CategoryCell(categoryName: categoryName, lankmarks: self.categories[categoryName]!)
+                    CategoryCell(categoryName: categoryName, lankmarks: self.categories[categoryName]!).environmentObject(self.userData)
                 }.listRowInsets(EdgeInsets())
                 
-//                NavigationLink(<#LocalizedStringKey#>, destination: /*@START_MENU_TOKEN@*/Text("Destination")/*@END_MENU_TOKEN@*/)
+                NavigationLink(destination: LandmarkList().environmentObject(self.userData)){
+                    Text("查看所有地标")
+                }
                 
             }.navigationBarTitle(Text("精选"))
-            
+            .navigationBarItems(
+                trailing:
+                    Button(action:{self.showingProfile.toggle()}){
+                        Image(systemName: "person.crop.circle")
+                            .font(.largeTitle)
+                        .padding()
+                    }.sheet(isPresented: $showingProfile, content: {
+                       Profile()
+                    })
+                  
+            )
             
         }
     }

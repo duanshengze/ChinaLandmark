@@ -12,8 +12,7 @@ struct LandmarkList: View {
     @EnvironmentObject var userData:UserData
     
     var body: some View {
-        NavigationView{
-            
+  
             List{
                 Toggle(isOn:$showFavoriteOnly){
                     Text("只展示收藏")
@@ -29,7 +28,7 @@ struct LandmarkList: View {
                     }
                     
             }.navigationBarTitle(Text("中国地标"))
-        }
+        
        
     }
 }

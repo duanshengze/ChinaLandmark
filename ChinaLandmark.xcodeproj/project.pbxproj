@@ -15,6 +15,8 @@
 		2546240E26E3926E00A884EF /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546240D26E3926E00A884EF /* HikeView.swift */; };
 		2546241026E399E700A884EF /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546240F26E399E700A884EF /* Home.swift */; };
 		2546241226E3A79F00A884EF /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546241126E3A79F00A884EF /* CategoryCell.swift */; };
+		2546241426E4EFA100A884EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546241326E4EFA100A884EF /* User.swift */; };
+		2546241726E4F1FB00A884EF /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2546241626E4F1FB00A884EF /* Profile.swift */; };
 		25B1397A26DFABB600409394 /* ChinaLandmarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1397926DFABB600409394 /* ChinaLandmarkApp.swift */; };
 		25B1397C26DFABB600409394 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1397B26DFABB600409394 /* ContentView.swift */; };
 		25B1397E26DFABBA00409394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B1397D26DFABBA00409394 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		2546240D26E3926E00A884EF /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		2546240F26E399E700A884EF /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		2546241126E3A79F00A884EF /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		2546241326E4EFA100A884EF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2546241626E4F1FB00A884EF /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		25B1397626DFABB600409394 /* ChinaLandmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChinaLandmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B1397926DFABB600409394 /* ChinaLandmarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChinaLandmarkApp.swift; sourceTree = "<group>"; };
 		25B1397B26DFABB600409394 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +89,14 @@
 			path = "Supporting Views";
 			sourceTree = "<group>";
 		};
+		2546241526E4F1DD00A884EF /* Profile Views */ = {
+			isa = PBXGroup;
+			children = (
+				2546241626E4F1FB00A884EF /* Profile.swift */,
+			);
+			path = "Profile Views";
+			sourceTree = "<group>";
+		};
 		25B1396D26DFABB600409394 = {
 			isa = PBXGroup;
 			children = (
@@ -104,15 +116,16 @@
 		25B1397826DFABB600409394 /* ChinaLandmark */ = {
 			isa = PBXGroup;
 			children = (
+				2546241526E4F1DD00A884EF /* Profile Views */,
 				2546240426E3919000A884EF /* Supporting Views */,
 				2546240326E3916D00A884EF /* Resources */,
-				25B1397B26DFABB600409394 /* ContentView.swift */,
 				2546240126E24FD100A884EF /* Cell Views */,
 				25B1397926DFABB600409394 /* ChinaLandmarkApp.swift */,
 				2546240D26E3926E00A884EF /* HikeView.swift */,
 				2546240F26E399E700A884EF /* Home.swift */,
 				25B1399026DFC8FE00409394 /* LandmarkList.swift */,
 				25B1398826DFAC4800409394 /* LandmarkDetail.swift */,
+				25B1397B26DFABB600409394 /* ContentView.swift */,
 				25B1398D26DFC65500409394 /* Models */,
 				25B1397D26DFABBA00409394 /* Assets.xcassets */,
 				25B1398226DFABBA00409394 /* Info.plist */,
@@ -144,6 +157,7 @@
 				2546240B26E391F000A884EF /* Hike.swift */,
 				25B1398E26DFC68700409394 /* Landmark.swift */,
 				254623FF26E1269400A884EF /* UserData.swift */,
+				2546241326E4EFA100A884EF /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,6 +240,8 @@
 				2546240A26E391DD00A884EF /* HikeGraph.swift in Sources */,
 				2546240C26E391F000A884EF /* Hike.swift in Sources */,
 				2546241026E399E700A884EF /* Home.swift in Sources */,
+				2546241426E4EFA100A884EF /* User.swift in Sources */,
+				2546241726E4F1FB00A884EF /* Profile.swift in Sources */,
 				25B1398B26DFB1D600409394 /* MapView.swift in Sources */,
 				25B1398926DFAC4800409394 /* LandmarkDetail.swift in Sources */,
 				2546240926E391DD00A884EF /* GraphCapsule.swift in Sources */,
